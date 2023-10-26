@@ -34,7 +34,7 @@
 *.exe
 *.out
 *.app
-src/main
+build/
 
 # Debug symbols
 *.dSYM/
