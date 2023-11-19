@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.22)
 
 project(C-Workshops)
 
-add_executable(Hello-World src/hello_world.c)
-add_executable(Read-Name src/read_name.c)
-add_executable(Main-Args src/main_args.c)
+add_executable(Ex0 src/ex0.c)
+add_executable(Ex1 src/ex1.c)
+add_executable(Ex2 src/ex2.c)
+add_executable(Ex3 src/ex3.c)
+add_executable(Ex4 src/ex4.c)
+add_executable(Ex5 src/ex5.c src/helper.h)
+add_executable(Ex6 src/ex6.c src/helper.h)
