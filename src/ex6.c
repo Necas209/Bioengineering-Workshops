@@ -3,7 +3,6 @@
 //
 
 #include <stdio.h>
-#include "helper.h"
 
 #define NO_NOTAS 6
 
@@ -19,7 +18,7 @@ int main() {
     struct Aluno aluno;
 
     printf("Nome do aluno: ");
-    read_string(aluno.nome, 50);
+    scanf("%[^\n]", aluno.nome);
 
     printf("Numero do aluno: ");
     scanf("%d", &aluno.numero);

@@ -3,13 +3,12 @@
 //
 
 #include <stdio.h>
-#include "helper.h"
 
 int main() {
     char nome[50];
 
     printf("Nome do ficheiro: ");
-    read_string(nome, 50);
+    scanf("%[^\n]", nome);
 
     FILE* f = fopen(nome, "r");
 
@@ -19,8 +18,11 @@ int main() {
     }
 
     while (!feof(f)) {
-        char linha[100];
-        fgets(linha, 100, f);
+        char* linha = NULL;
+        size_t n = 0;
+        if (getline(&linha, &n, f) == -1) {
+            break;
+        }
         printf("%s", linha);
     }
 
