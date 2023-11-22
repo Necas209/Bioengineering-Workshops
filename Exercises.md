@@ -33,6 +33,7 @@ O programa deve preencher o array com números aleatórios e exibir os números 
 ## Exercício 6 - Arrays e estruturas de dados
 
 Declare uma estrutura de dados que represente um aluno. A estrutura deve conter os seguintes campos:
+
 - Nome do aluno (até 50 caracteres)
 - Número de aluno (inteiro)
 - Notas de 6 disciplinas (float/double, 0-20)
