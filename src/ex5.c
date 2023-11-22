@@ -3,45 +3,28 @@
 //
 
 #include <stdio.h>
-#include "helper.h"
-
-#define NO_NOTAS 6
-
-struct Aluno {
-    char nome[50];
-    int numero;
-    double notas[NO_NOTAS];
-};
-
-double media(const struct Aluno* aluno);
+#include <stdlib.h>
 
 int main() {
-    struct Aluno aluno;
+    int num;
 
-    printf("Nome do aluno: ");
-    read_string(aluno.nome, 50);
+    printf("Insira um número: ");
+    scanf("%d", &num);
 
-    printf("Numero do aluno: ");
-    scanf("%d", &aluno.numero);
-
-    printf("Notas do aluno: ");
-    for (int j = 0; j < NO_NOTAS; ++j) {
-        scanf("%lf", &aluno.notas[j]);
+    if (num <= 0) {
+        printf("O número tem de ser maior que 0!\n");
+        return 1;
     }
 
-    printf("Aluno: %s\n", aluno.nome);
-    printf("Numero: %d\n", aluno.numero);
-    printf("Média: %lf\n", media(&aluno));
+    // Definir a semente para o gerador de números aleatórios
+    srand(42);
 
+    int* arr = malloc(num * sizeof(int));
+    for (int i = 0; i < num; ++i) {
+        arr[i] = rand() % 100;
+        printf("%dº elemento: %d\n", i + 1, arr[i]);
+    }
+
+    free(arr);
     return 0;
-}
-
-double media(const struct Aluno* aluno) {
-    double media = 0;
-
-    for (int i = 0; i < NO_NOTAS; ++i) {
-        media += aluno->notas[i];
-    }
-
-    return media / NO_NOTAS;
 }

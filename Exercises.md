@@ -20,12 +20,17 @@ Solicite ao utilizador para inserir um número inteiro e use uma instrução con
 Crie um programa que calcula o fatorial de um número usando funções.
 O programa deve solicitar ao utilizador para inserir um número inteiro e exibir o resultado no ecrã.
 
-## Exercício 4 - Gestão de memória
+## Exercício 4 - Apontadores
+
+Implemente um programa que troca o valor de duas variáveis.
+Exiba os valores das variáveis no ecrã antes e depois da troca.
+
+## Exercício 5 - Gestão de memória
 
 O programa deve criar um array de inteiros com o tamanho especificado pelo utilizador.
 O programa deve preencher o array com números aleatórios e exibir os números no ecrã.
 
-## Exercício 5 - Arrays e estruturas de dados
+## Exercício 6 - Arrays e estruturas de dados
 
 Declare uma estrutura de dados que represente um aluno. A estrutura deve conter os seguintes campos:
 - Nome do aluno (até 50 caracteres)
@@ -35,7 +40,7 @@ Declare uma estrutura de dados que represente um aluno. A estrutura deve conter 
 Implemente um programa que solicite ao utilizador para inserir os dados de um aluno.
 O programa deve calcular a média do aluno e exibir os resultados no ecrã.
 
-## Exercício 6 - Ficheiros
+## Exercício 7 - Ficheiros
 
 Implemente um programa que leia o conteúdo de um ficheiro de texto e exiba o conteúdo no ecrã.
 O nome do ficheiro deve ser fornecido pelo utilizador.
