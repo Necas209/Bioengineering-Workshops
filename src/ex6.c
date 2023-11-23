@@ -25,7 +25,7 @@ int main() {
     struct Aluno aluno;
 
     // Lê os dados do aluno
-    // %[^n] indica que a leitura para quando é encontrado um \n (ENTER)
+    // %[^n] indica que a leitura para quando é encontrado um '\n' (ENTER)
     printf("Nome do aluno: ");
     scanf("%[^\n]", aluno.nome);
 
