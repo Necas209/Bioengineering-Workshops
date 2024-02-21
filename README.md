@@ -1,2 +1,2 @@
-# Cpp-Workshops
- Source code for the C++ workshops.
+# Bioengineering-Workshops
+ Source code for the Bioengineering workshops.
